@@ -18,3 +18,9 @@ config :punky, Punky.Endpoint,
 
 config :logger,
   level: :info
+
+config :database,
+  host: "localhost",
+  database: "punky_prod",
+  username: "punky",
+  password: System.get_env("PUNKY_DATABASE_PASSWOD")

@@ -6,3 +6,9 @@ config :punky, Punky.Endpoint,
 
 # Enables code reloading for development
 config :phoenix, :code_reloader, true
+
+config :database,
+  host: "localhost",
+  database: "punky_dev",
+  username: "postgres",
+  password: ""

@@ -14,15 +14,21 @@ defmodule Punky.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [mod: {Punky, []},
-     applications: [:phoenix, :cowboy, :logger]]
+    [
+      mod: {Punky, []},
+      applications: [:phoenix, :cowboy, :logger, :postgrex, :ecto]
+   ]
   end
 
   # Specifies your project dependencies
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, "~> 0.7.2"},
-     {:cowboy, "~> 1.0"}]
+    [
+      {:phoenix, "~> 0.7.2"},
+      {:cowboy, "~> 1.0"},
+      {:postgrex, "~> 0.6.0"},
+      {:ecto, "~> 0.2.5"}
+   ]
   end
 end
