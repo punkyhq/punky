@@ -1,0 +1,17 @@
+<form action="/signup" method="post">
+  <p>
+    <label for="user_name">Name:</label>
+    <input type="text" id="user_name" name="user[name]">
+  </p>
+  <p>
+    <label for="user_email">Email:</label>
+    <input type="text" id="user_email" name="user[email]">
+  </p>
+  <p>
+    <label for="user_name">Password:</label>
+    <input type="password" id="user_password" name="user[password]">
+  </p>
+  <p>
+    <input type="submit" value="Sign up">
+  </p>
+</form>

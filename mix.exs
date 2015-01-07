@@ -16,7 +16,7 @@ defmodule Punky.Mixfile do
   def application do
     [
       mod: {Punky, []},
-      applications: [:phoenix, :cowboy, :logger, :postgrex, :ecto]
+      applications: [:phoenix, :cowboy, :logger, :postgrex, :ecto, :erlpass]
    ]
   end
 
@@ -28,7 +28,8 @@ defmodule Punky.Mixfile do
       {:phoenix, "~> 0.7.2"},
       {:cowboy, "~> 1.0"},
       {:postgrex, "~> 0.6.0"},
-      {:ecto, "~> 0.2.5"}
+      {:ecto, "~> 0.2.5"},
+      {:erlpass, github: "ferd/erlpass"}
    ]
   end
 end
