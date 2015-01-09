@@ -17,6 +17,8 @@ defmodule Punky.Router do
 
     get "/signup", UsersController, :new
     post "/signup", UsersController, :create
+    get "/signin", SessionsController, :new
+    post "/signin", SessionsController, :create
   end
 
   # Other scopes may use custom stacks.

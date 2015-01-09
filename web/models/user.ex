@@ -26,8 +26,16 @@ defmodule Punky.User do
     %{user | password_digest: password_digest}
   end
 
+  def authenticate(user, password) do
+    :erlpass.match(password, user.password_digest)
+  end
+
+  def find_by(field, value) do
+    Punky.Repo.one(from u in __MODULE__, where: field(u, ^field) == ^value)
+  end
+
   defp unique(field, value, opts \\ []) do
-    unless Punky.Repo.one(from u in __MODULE__, where: field(u, ^field) == ^value) do
+    unless find_by(field, value) do
       opts[:message] || "#{field} is already exist"
     end
   end

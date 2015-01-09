@@ -1,0 +1,21 @@
+<div class="ui form">
+  <form action="/signin" method="post">
+    <div class="field">
+      <label for="email">Email:</label>
+      <div class="ui icon input">
+        <input type="text" id="email" name="email">
+        <i class="mail icon"></i>
+      </div>
+    </div>
+    <div class="field">
+      <label for="password">Password:</label>
+      <div class="ui icon input">
+        <input type="password" id="password" name="password">
+        <i class="lock icon"></i>
+      </div>
+    </div>
+    <button class="ui submit button">
+      Signin
+    </button>
+  </form>
+</div>
