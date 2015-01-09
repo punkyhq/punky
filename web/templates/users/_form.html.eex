@@ -1,17 +1,28 @@
-<form action="/signup" method="post">
-  <p>
-    <label for="user_name">Name:</label>
-    <input type="text" id="user_name" name="user[name]">
-  </p>
-  <p>
-    <label for="user_email">Email:</label>
-    <input type="text" id="user_email" name="user[email]">
-  </p>
-  <p>
-    <label for="user_name">Password:</label>
-    <input type="password" id="user_password" name="user[password]">
-  </p>
-  <p>
-    <input type="submit" value="Sign up">
-  </p>
-</form>
+<div class="ui form">
+  <form action="/signup" method="post">
+    <div class="field">
+      <label for="user_name">Name:</label>
+      <div class="ui icon input">
+        <input type="text" id="user_name" name="user[name]">
+        <i class="user icon"></i>
+      </div>
+    </div>
+    <div class="field">
+      <label for="user_email">Email:</label>
+      <div class="ui icon input">
+        <input type="text" id="user_email" name="user[email]">
+        <i class="mail icon"></i>
+      </div>
+    </div>
+    <div class="field">
+      <label for="user_name">Password:</label>
+      <div class="ui icon input">
+        <input type="password" id="user_password" name="user[password]">
+        <i class="lock icon"></i>
+      </div>
+    </div>
+    <div class="ui submit button">
+      Register
+    </div>
+  </form>
+</div>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= render Punky.LayoutView, "_head.html", [] %>
+  <body>
+    <nav class="ui fixed menu inverted navbar">
+      <a href="" class="brand item">Punky</a>
+    </nav>
+
+    <main class="ui page grid">
+      <%= @inner %>
+    </main>
+
+  </body>
+</html>
