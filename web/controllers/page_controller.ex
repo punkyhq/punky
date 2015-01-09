@@ -1,5 +1,5 @@
 defmodule Punky.PageController do
-  use Phoenix.Controller
+  use Punky.Controller
 
   plug :action
 

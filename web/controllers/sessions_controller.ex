@@ -1,5 +1,5 @@
 defmodule Punky.SessionsController do
-  use Phoenix.Controller
+  use Punky.Controller
 
   alias Punky.User
 
