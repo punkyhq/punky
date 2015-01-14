@@ -1,5 +1,6 @@
 <div class="ui form">
   <form action="/signup" method="post">
+    <input type="hidden" name="csrf_token" value="<%= csrf_token(@conn) %>">
     <div class="field">
       <label for="user_name">Name:</label>
       <div class="ui icon input">

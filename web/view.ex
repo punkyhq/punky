@@ -17,4 +17,7 @@ defmodule Punky.View do
   end
 
   # Functions defined here are available to all other views/templates
+  def csrf_token(conn) do
+    Plug.Conn.get_session(conn, :csrf_token)
+  end
 end

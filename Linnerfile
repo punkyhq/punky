@@ -47,6 +47,9 @@ bundles:
   jquery.js:
     version: 1.10.2
     url: http://code.jquery.com/jquery-1.10.2.js
+  phoenix.js:
+    version: 0.8.0
+    url: http://raw.githubusercontent.com/phoenixframework/phoenix/v0.8.0/priv/static/js/phoenix.js
   semantic-ui/semantic.css:
     version: 1.6.4
     url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/semantic.css

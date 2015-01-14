@@ -8,6 +8,7 @@ defmodule Punky do
 
     children = [
       # Define workers and child supervisors to be supervised
+      worker(Punky.Endpoint, []),
       worker(Punky.Repo, [])
     ]
 
