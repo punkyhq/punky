@@ -13,9 +13,10 @@ defmodule Punky.UsersController do
   def create(conn, params) do
     user = struct(User, params |> user_params)
     if User.validate(user) do
-      user
-      |> User.encrypt_password
-      |> Punky.Repo.insert
+      user = user
+              |> User.encrypt_password
+              |> Punky.Repo.insert
+      conn = sign_in(conn, user)
     end
 
     redirect conn, to: page_path(conn, :index)

@@ -29,12 +29,4 @@ defmodule Punky.SessionsController do
 
     redirect conn, to: page_path(conn, :index)
   end
-
-  defp sign_in(conn, user) do
-    put_session(conn, :user_id, user.id)
-  end
-
-  def sign_out(conn) do
-    put_session(conn, :user_id, nil)
-  end
 end
