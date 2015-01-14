@@ -3,7 +3,7 @@ defmodule Punky.UsersController do
 
   alias Punky.User
 
-  plug :put_layout, :signin
+  plug :put_layout, :authentication
   plug :action
 
   def new(conn, _params) do
