@@ -2,9 +2,7 @@
 <html lang="en">
   <%= render Punky.LayoutView, "_head.html", [] %>
   <body>
-    <nav class="ui fixed menu inverted navbar">
-      <a href="" class="brand item">Punky</a>
-    </nav>
+    <%= render Punky.LayoutView, "_nav.html", [] %>
 
     <main class="ui page grid">
       <%= @inner %>

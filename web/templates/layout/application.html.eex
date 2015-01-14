@@ -2,11 +2,11 @@
 <html lang="en">
   <%= render Punky.LayoutView, "_head.html", [] %>
   <body>
-    <header>
-      <a href="/">Punky</a>
-    </header>
+    <%= render Punky.LayoutView, "_nav.html", [] %>
 
+    <main class="ui page grid">
       <%= @inner %>
+    </main>
 
   </body>
 </html>
