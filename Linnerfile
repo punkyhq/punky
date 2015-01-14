@@ -19,6 +19,7 @@ groups:
       - app/styles
     concat:
       "/styles/app.css": "web/assets/styles/**/[a-z]*.{css,scss,sass}"
+      "/styles/vendor.css": "vendor/**/[a-z]*.{css,scss,sass}"
   images:
     paths:
       - app/images
@@ -41,3 +42,10 @@ bundles:
   jquery.js:
     version: 1.10.2
     url: http://code.jquery.com/jquery-1.10.2.js
+  semantic.css:
+    version: 1.6.4
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/semantic.css
+  semantic.js:
+    version: 1.6.4
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/semantic.js
+
