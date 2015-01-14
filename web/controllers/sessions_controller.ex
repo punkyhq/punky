@@ -16,7 +16,7 @@ defmodule Punky.SessionsController do
       redirect conn, to: "/signin"
     else
       if User.authenticate(user, params["password"]) do
-        conn = signin(conn, user)
+        conn = sign_in(conn, user)
         redirect conn, to: "/"
       else
         redirect conn, to: "/signin"
@@ -24,7 +24,17 @@ defmodule Punky.SessionsController do
     end
   end
 
-  defp signin(conn, user) do
+  def destroy(conn, params) do
+    conn = sign_out(conn)
+
+    redirect conn, to: "/"
+  end
+
+  defp sign_in(conn, user) do
     put_session(conn, :user_id, user.id)
+  end
+
+  def sign_out(conn) do
+    put_session(conn, :user_id, nil)
   end
 end

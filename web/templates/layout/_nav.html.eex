@@ -3,9 +3,10 @@
   <div class="right menu">
     <%= if user_signed_in?(@conn) do %>
       <a href="#" class="item"><%= current_user(@conn).name %></a>
+      <a href="<%= sessions_path(@conn, :destroy) %>" class="item">Sign out</a>
     <% else %>
-      <a href="<%= sessions_path(@conn, :new) %>" class="item">Signin</a>
-      <a href="<%= users_path(@conn, :new) %>" class="item">Signup</a>
+      <a href="<%= sessions_path(@conn, :new) %>" class="item">Sign in</a>
+      <a href="<%= users_path(@conn, :new) %>" class="item">Sign up</a>
     <% end %>
   </div>
 </nav>
