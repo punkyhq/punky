@@ -25,6 +25,11 @@ groups:
       - app/images
     sprite:
       "../../../web/assets/styles/icons.scss": "web/assets/images/**/*.png"
+  semantic-ui:
+    paths:
+      - vendor/semantic-ui
+    copy:
+      "/styles": "vendor/semantic-ui/themes/default/assets/fonts/*"
 modules:
   wrapper: cmd
   ignored: vendor/**/*
@@ -42,10 +47,30 @@ bundles:
   jquery.js:
     version: 1.10.2
     url: http://code.jquery.com/jquery-1.10.2.js
-  semantic.css:
+  semantic-ui/semantic.css:
     version: 1.6.4
     url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/semantic.css
-  semantic.js:
+  semantic-ui/semantic.js:
     version: 1.6.4
     url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/semantic.js
-
+  semantic-ui/themes/default/assets/fonts/icons.eot:
+    version: 1.6.4
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.eot
+  semantic-ui/themes/default/assets/fonts/icons.otf:
+    version: 1.6.4
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.otf
+  semantic-ui/themes/default/assets/fonts/icons.svg:
+    version: 1.6.4
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.svg
+  semantic-ui/themes/default/assets/fonts/icons.svg:
+    version: 1.6.4
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.svg
+  semantic-ui/themes/default/assets/fonts/icons.ttf:
+    version: 1.6.4
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.ttf
+  semantic-ui/themes/default/assets/fonts/icons.woff:
+    version: 1.6.4
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.woff
+  semantic-ui/themes/default/assets/images/flags.png:
+    version: 1.6.4
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/images/flags.png
