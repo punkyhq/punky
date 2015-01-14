@@ -13,13 +13,13 @@ defmodule Punky.SessionsController do
   def create(conn, params) do
     user = User.find_by(:email, params["email"])
     if is_nil(user) do
-      redirect conn, to: "/signin"
+      render conn, "new.html"
     else
       if User.authenticate(user, params["password"]) do
         conn = sign_in(conn, user)
-        redirect conn, to: "/"
+        redirect conn, to: page_path(conn, :index)
       else
-        redirect conn, to: "/signin"
+        render conn, "new.html"
       end
     end
   end
@@ -27,7 +27,7 @@ defmodule Punky.SessionsController do
   def destroy(conn, params) do
     conn = sign_out(conn)
 
-    redirect conn, to: "/"
+    redirect conn, to: page_path(conn, :index)
   end
 
   defp sign_in(conn, user) do

@@ -18,7 +18,7 @@ defmodule Punky.UsersController do
       |> Punky.Repo.insert
     end
 
-    redirect conn, to: "/"
+    redirect conn, to: page_path(conn, :index)
   end
 
   defp user_params(params) do
