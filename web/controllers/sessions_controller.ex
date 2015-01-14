@@ -16,7 +16,7 @@ defmodule Punky.SessionsController do
       redirect conn, to: "/signin"
     else
       if User.authenticate(user, params["password"]) do
-        signin(conn, user)
+        conn = signin(conn, user)
         redirect conn, to: "/"
       else
         redirect conn, to: "/signin"

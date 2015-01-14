@@ -16,8 +16,8 @@ config :punky, Punky.Endpoint,
   http: [port: System.get_env("PORT")],
   secret_key_base: "sdqgCVtirlPAuOZcewYtkuWse3SdKRTkO6fWSFmgzumd6gz3oj9MUd32vAzQ2HVt"
 
-config :logger,
-  level: :info
+# Do not pring debug messages in production
+config :logger, level: :info
 
 config :database,
   host: "localhost",

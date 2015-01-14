@@ -1,5 +1,5 @@
 <div class="ui form">
-  <form action="/signin" method="post">
+  <form action="<%= sessions_path(@conn, :create) %>" method="post">
     <input type="hidden" name="csrf_token" value="<%= csrf_token(@conn) %>">
     <div class="field">
       <label for="email">Email:</label>

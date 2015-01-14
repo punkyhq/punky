@@ -8,7 +8,6 @@ use Mix.Config
 # Configures the endpoint
 config :punky, Punky.Endpoint,
   url: [host: "localhost"],
-  http: [port: System.get_env("PORT")],
   secret_key_base: "sdqgCVtirlPAuOZcewYtkuWse3SdKRTkO6fWSFmgzumd6gz3oj9MUd32vAzQ2HVt",
   debug_errors: false
 
