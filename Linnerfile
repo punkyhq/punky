@@ -51,29 +51,29 @@ bundles:
     version: 0.8.0
     url: http://raw.githubusercontent.com/phoenixframework/phoenix/v0.8.0/priv/static/js/phoenix.js
   semantic-ui/semantic.css:
-    version: 1.6.4
-    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/semantic.css
+    version: 1.7.3
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.7.3/semantic.css
   semantic-ui/semantic.js:
-    version: 1.6.4
-    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/semantic.js
+    version: 1.7.3
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.7.3/semantic.js
   semantic-ui/themes/default/assets/fonts/icons.eot:
-    version: 1.6.4
-    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.eot
+    version: 1.7.3
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.7.3/themes/default/assets/fonts/icons.eot
   semantic-ui/themes/default/assets/fonts/icons.otf:
-    version: 1.6.4
-    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.otf
+    version: 1.7.3
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.7.3/themes/default/assets/fonts/icons.otf
   semantic-ui/themes/default/assets/fonts/icons.svg:
-    version: 1.6.4
-    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.svg
+    version: 1.7.3
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.7.3/themes/default/assets/fonts/icons.svg
   semantic-ui/themes/default/assets/fonts/icons.svg:
-    version: 1.6.4
-    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.svg
+    version: 1.7.3
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.7.3/themes/default/assets/fonts/icons.svg
   semantic-ui/themes/default/assets/fonts/icons.ttf:
-    version: 1.6.4
-    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.ttf
+    version: 1.7.3
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.7.3/themes/default/assets/fonts/icons.ttf
   semantic-ui/themes/default/assets/fonts/icons.woff:
-    version: 1.6.4
-    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/fonts/icons.woff
+    version: 1.7.3
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.7.3/themes/default/assets/fonts/icons.woff
   semantic-ui/themes/default/assets/images/flags.png:
-    version: 1.6.4
-    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.6.4/themes/default/assets/images/flags.png
+    version: 1.7.3
+    url: http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.7.3/themes/default/assets/images/flags.png

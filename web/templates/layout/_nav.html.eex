@@ -1,12 +1,16 @@
-<nav class="ui fixed menu inverted navbar">
-  <a href="<%= home_path(@conn, :index) %>" class="brand item">Punky</a>
-  <div class="right menu">
-    <%= if @current_user do %>
-      <a href="#" class="item"><%= @current_user.name %></a>
-      <a href="<%= sessions_path(@conn, :destroy) %>" class="item">Sign out</a>
-    <% else %>
-      <a href="<%= sessions_path(@conn, :new) %>" class="item">Sign in</a>
-      <a href="<%= users_path(@conn, :new) %>" class="item">Sign up</a>
-    <% end %>
+<nav class="ui fixed inverted main menu">
+  <div class="container">
+    <div class="left menu">
+      <a href="<%= home_path(@conn, :index) %>" class="brand item">Punky</a>
+    </div>
+    <div class="right menu">
+      <%= if @current_user do %>
+        <a href="#" class="item"><%= @current_user.name %></a>
+        <a href="<%= sessions_path(@conn, :destroy) %>" class="item">Sign out</a>
+      <% else %>
+        <a href="<%= sessions_path(@conn, :new) %>" class="item">Sign in</a>
+        <a href="<%= users_path(@conn, :new) %>" class="item">Sign up</a>
+      <% end %>
+    </div>
   </div>
 </nav>

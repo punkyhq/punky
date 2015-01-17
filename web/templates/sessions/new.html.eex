@@ -1,10 +1,7 @@
-<div class="ui raised segment signin">
-  <div class="ui two column grid basic segment">
-    <div class="column">
-      <div class="ui blue stacked segment">
-        <%= render Punky.SessionsView, "_form.html", [conn: @conn] %>
-      </div>
+<div class="ui two column grid basic segment">
+  <div class="centered column">
+    <div class="ui blue stacked segment">
+      <%= render Punky.SessionsView, "_form.html", [conn: @conn] %>
     </div>
   </div>
 </div>
-
