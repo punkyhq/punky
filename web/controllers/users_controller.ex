@@ -19,7 +19,7 @@ defmodule Punky.UsersController do
       conn = sign_in(conn, user)
     end
 
-    redirect conn, to: page_path(conn, :index)
+    redirect conn, to: home_path(conn, :index)
   end
 
   defp user_params(params) do

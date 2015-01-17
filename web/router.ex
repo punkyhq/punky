@@ -19,7 +19,7 @@ defmodule Punky.Router do
   scope "/", Punky do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", HomeController, :index
 
     get "/sign_up", UsersController, :new
     post "/sign_up", UsersController, :create

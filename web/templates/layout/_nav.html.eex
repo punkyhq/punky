@@ -1,8 +1,8 @@
 <nav class="ui fixed menu inverted navbar">
-  <a href="<%= page_path(@conn, :index) %>" class="brand item">Punky</a>
+  <a href="<%= home_path(@conn, :index) %>" class="brand item">Punky</a>
   <div class="right menu">
-    <%= if user_signed_in?(@conn) do %>
-      <a href="#" class="item"><%= current_user(@conn).name %></a>
+    <%= if @current_user do %>
+      <a href="#" class="item"><%= @current_user.name %></a>
       <a href="<%= sessions_path(@conn, :destroy) %>" class="item">Sign out</a>
     <% else %>
       <a href="<%= sessions_path(@conn, :new) %>" class="item">Sign in</a>

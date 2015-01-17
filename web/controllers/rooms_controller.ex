@@ -4,10 +4,15 @@ defmodule Punky.RoomsController do
   plug :action
 
   def index(conn, _params) do
-    render conn, "index.html"
+    conn
+    |> authenticate_user!
+    |> render "index.html", current_user: current_user(conn)
   end
 
   def show(conn, _params) do
-    render conn, "show.html"
+    conn
+    |> authenticate_user!
+    |> render "show.html", current_user: current_user(conn)
   end
 end
+

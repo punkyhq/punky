@@ -16,22 +16,8 @@ defmodule Punky.View do
     end
   end
 
-  # Functions defined here are available to all other views/templates
   def csrf_token(conn) do
     Plug.Conn.get_session(conn, :csrf_token)
   end
-
-  def user_signed_in?(conn) do
-    !!current_user(conn)
-  end
-
-  def current_user(conn) do
-    case Plug.Conn.get_session(conn, :user_id) do
-      nil ->
-        nil
-      user_id ->
-        Punky.Repo.get Punky.User, user_id
-    end
-  end
-end
+ end
 

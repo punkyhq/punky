@@ -17,7 +17,7 @@ defmodule Punky.SessionsController do
     else
       if User.authenticate(user, params["password"]) do
         conn = sign_in(conn, user)
-        redirect conn, to: page_path(conn, :index)
+        redirect conn, to: rooms_path(conn, :index)
       else
         render conn, "new.html"
       end
@@ -27,6 +27,6 @@ defmodule Punky.SessionsController do
   def destroy(conn, params) do
     conn = sign_out(conn)
 
-    redirect conn, to: page_path(conn, :index)
+    redirect conn, to: home_path(conn, :index)
   end
 end
