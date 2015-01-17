@@ -8,6 +8,4 @@
   <title>Punky</title>
   <link rel="stylesheet" href="/assets/styles/vendor.css">
   <link rel="stylesheet" href="/assets/styles/app.css">
-  <script type="text/javascript" src="/assets/scripts/vendor.js"></script>
-  <script type="text/javascript" src="/assets/scripts/app.js"></script>
 </head>

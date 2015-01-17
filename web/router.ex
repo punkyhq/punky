@@ -1,6 +1,10 @@
 defmodule Punky.Router do
   use Phoenix.Router
 
+  socket "/ws", Punky do
+    channel "rooms:*", RoomChannel
+  end
+
   pipeline :browser do
     plug :accepts, ~w(html)
     plug :fetch_session
@@ -22,6 +26,8 @@ defmodule Punky.Router do
     get "/sign_in", SessionsController, :new
     post "/sign_in", SessionsController, :create
     get "/sign_out", SessionsController, :destroy
+
+    resources "/rooms", RoomsController
   end
 
   # Other scopes may use custom stacks.

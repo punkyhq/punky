@@ -1,0 +1,6 @@
+<div id="messages">
+
+</div>
+<div class="ui fluid action input">
+  <input id="message-input" type="text">
+</div>

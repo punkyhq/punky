@@ -8,5 +8,8 @@
       <%= @inner %>
     </main>
 
+    <script type="text/javascript" src="/assets/scripts/vendor.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+    <script>require("app")()</script>
   </body>
 </html>

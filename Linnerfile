@@ -6,7 +6,7 @@ paths:
 groups:
   scripts:
     paths:
-      - app/scripts
+      - web/assets/scripts
     concat:
       "/scripts/app.js": "web/assets/**/*.{js,coffee}"
       "/scripts/vendor.js": "vendor/**/*.{js,coffee}"

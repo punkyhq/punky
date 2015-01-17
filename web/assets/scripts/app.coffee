@@ -1,4 +1,3 @@
 module.exports = ->
-  console.info "log from meck!!"
-  console.info "log from meck!!"
-
+  console.info "log from Punky!"
+  require("rooms")()
