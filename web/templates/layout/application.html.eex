@@ -2,14 +2,14 @@
 <html lang="en">
   <%= render Punky.LayoutView, "_head.html", [] %>
   <body>
-    <%= render Punky.LayoutView, "_nav.html", [conn: @conn, current_user: @current_user] %>
+    <div class="ui grid">
+      <%= render Punky.LayoutView, "_sidebar.html", [] %>
 
-    <div class="ui page grid">
-      <%= @inner %>
+      <div class="fourteen wide column">
+        <%= @inner %>
+      </div>
     </div>
 
-    <script type="text/javascript" src="/assets/scripts/vendor.js"></script>
-    <script type="text/javascript" src="/assets/scripts/app.js"></script>
-    <script>require("app")()</script>
+    <%= render Punky.LayoutView, "_foot.html", [] %>
   </body>
 </html>
