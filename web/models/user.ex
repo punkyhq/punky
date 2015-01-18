@@ -2,12 +2,12 @@ defmodule Punky.User do
   use Ecto.Model
 
   schema "users" do
-    field :name, :string
-    field :email, :string
-    field :password, :virtual
+    field :name,            :string
+    field :email,           :string
+    field :password,        :virtual
     field :password_digest, :string
-    field :created_at, :datetime, default: Ecto.DateTime.local
-    field :updated_at, :datetime, default: Ecto.DateTime.local
+    field :created_at,      :datetime, default: Ecto.DateTime.local
+    field :updated_at,      :datetime, default: Ecto.DateTime.local
   end
 
   validate user,
