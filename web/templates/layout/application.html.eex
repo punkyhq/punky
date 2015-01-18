@@ -3,7 +3,7 @@
   <%= render Punky.LayoutView, "_head.html", [] %>
   <body>
     <div class="ui grid">
-      <%= render Punky.LayoutView, "_sidebar.html", [] %>
+      <%= render Punky.LayoutView, "_sidebar.html", [conn: @conn, rooms: @rooms] %>
 
       <div class="fourteen wide column">
         <%= @inner %>

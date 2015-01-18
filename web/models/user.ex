@@ -34,9 +34,19 @@ defmodule Punky.User do
     Punky.Repo.one(from u in __MODULE__, where: field(u, ^field) == ^value)
   end
 
+  def rooms(user) do
+    query = from r in Punky.Room,
+              select: r,
+              join:   ur in Punky.UsersRoom, on: r.id == ur.room_id,
+              join:   u in Punky.User, on: u.id == ur.user_id,
+              where:  u.id == ^user.id
+    Punky.Repo.all(query)
+  end
+
   defp unique(field, value, opts \\ []) do
     unless find_by(field, value) do
       opts[:message] || "#{field} is already exist"
     end
   end
 end
+

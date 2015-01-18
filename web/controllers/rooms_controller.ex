@@ -4,15 +4,17 @@ defmodule Punky.RoomsController do
   plug :action
 
   def index(conn, _params) do
+    room = Punky.User.rooms(current_user(conn)) |> List.first
     conn
     |> authenticate_user!
-    |> render "index.html", current_user: current_user(conn)
+    |> redirect to: rooms_path(conn, :show, room.id)
   end
 
   def show(conn, _params) do
+    rooms = Punky.User.rooms(current_user(conn))
     conn
     |> authenticate_user!
-    |> render "show.html", current_user: current_user(conn)
+    |> render "show.html", rooms: rooms
   end
 end
 

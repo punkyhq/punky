@@ -1,5 +1,13 @@
 <div class="two wide column">
+  <div id="rooms">
+    <%= for room <- @rooms do %>
+      <p>
+        <a href="<%= rooms_path(@conn, :show, room.id) %>">#<%= room.name %></a>
+      </p>
+    <% end %>
+  </div>
   <div id="user-menu">
     Meck
   </div>
 </div>
+
