@@ -2,7 +2,8 @@ defmodule Punky.Endpoint do
   use Phoenix.Endpoint, otp_app: :punky
 
   plug Plug.Static,
-    at: "/", from: :punky
+    at: "/", from: :punky,
+    only: ~w(assets favicon.ico robots.txt)
 
   plug Plug.Logger
 
